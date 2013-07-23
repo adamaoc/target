@@ -72,5 +72,14 @@ App.User.FIXTURES = [
 		"assignID": "10202",
 		"bio": "Working on the Inventory Search team building out the new MVC Inventory pages!",
 		"rank": "Killer"
+	}, 
+	{
+		"id": 3,
+		"username": "jtowers",
+		"firstName": "Josh",
+		"lastName": "Towers",
+		"assignID": "10142",
+		"bio": "Work? What's that all about..",
+		"rank": "Rooky"
 	}
 ];

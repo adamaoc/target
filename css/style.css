@@ -48,6 +48,7 @@ h3 {
 }
 h4 {
 	font-size: 1.125rem;
+	color: #A99456;
 }
 p {
 	font-size: 1rem;
@@ -62,7 +63,7 @@ ul {
 	padding: 0;
 	margin: 0;
 }
-body {
+.bg-wrapper {
 	background: url('../img/bg2.jpg') no-repeat;
 	background-size: cover;
 	height: 100%;
@@ -182,6 +183,9 @@ input[type="text"], input[type="password"] {
 	font-size: .7em;
 	color: #A99456;
 }
+h4.target {
+	color: #fff;
+}
 .target span {
 	color: #ff0011;
 	font-size: 1.2em;
@@ -225,15 +229,16 @@ input[type="text"], input[type="password"] {
 
 /* USERS PAGE */
 .players {
-	border-left: .5em solid #A99456;
+	border-left: .5em solid #9A623D;
 }
 .players li {
-	padding-left: .5em;
+	padding: .5em;
 }
 .players li:nth-child(even) {
 	background: #f1f1f1;
+	color: #3A3C42;
 }
 .players h3 > span, .players p > span {
-	color: #777;
+	color: #9A623D;
 	font-size: .8em;
 }
