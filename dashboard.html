@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+<title>Ember Starter Kit</title>
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <script type="text/x-handlebars">
+    {{partial "header"}}
+    {{outlet}}
+    {{partial "footer"}}
+  </script>
+
+  <script type="text/x-handlebars" data-template-name="index">
+    <nav class="dash-nav">
+      <h2 class="dash-title">
+      <a href="#/locate" class="locate"></a>
+      <a href="#/dashboard" class="settings"></a>
+      <a href="#/users" class="users"></a>
+      <a href="#/new" class="new"></a>
+    </nav>
+    <div class="profile-photo"></div>
+    <div class="stats">
+      <ul>
+        <li>Assasin<span>Rank</span></li>
+        <li>005<span>Kills</span></li>
+        <li>017<span>Games</span></li>
+      </ul>
+    </div>
+  </script>
+
+  <script type="text/x-handlebars" data-template-name="dashboard">
+    <h2 class="welcome-name">Welcome {{firstName}} <span>(#{{assignID}})</h2>
+    <section class="target">
+      <header>
+        <h4 class="target">Your target is: <span>#10202</span></h4>
+      </header>
+      <div class="target-clues">
+        <ol class="clue-list">
+          <li>
+            <h4>Clue 1:</h4>
+            <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p>
+          </li>
+          <li>
+            <h4>Clue 2:</h4>
+            <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p>
+          </li>
+          <li>
+            <h4>Clue 3:</h4>
+            <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p>
+          </li>
+        </ol>
+      </div>
+  </script>
+
+  <script type="text/x-handlebars" data-template-name="users">
+    <ul class="players">
+    {{#each model}}
+      <li>
+        <h3>{{firstName}} {{lastName}} <span>rank: {{rank}}</span></h3>
+        <p>code name: <span>{{username}}</span></p>
+        <p>{{bio}}</p>
+      </li>
+    {{/each}}
+    </ul>
+  </script>
+
+  <script type="text/x-handlebars" data-template-name="_header">
+    <header class="app-header">
+      <h1 class="logo">target="_you"</h1>
+      <h2 class="slogan">the assassin game for nerds</h2>
+    </header>
+    <section class="game-board">
+  </script>
+
+  <script type="text/x-handlebars" data-template-name="_footer">
+    </section>
+    <footer class="app-footer">
+      <h3 class="footer-rank">Rank: Assassin</h3>
+      {{#view App.ClickableView}}
+      <span class="nav-btn">Nav</span>
+      {{/view}}
+      <nav class="app-nav">
+        <ul>
+          <li>{{#linkTo 'dashboard'}}Dashboard{{/linkTo}}</li>
+          <li>{{#linkTo 'users'}}Users{{/linkTo}}</li>
+          <li><a href="#">Clients</a></li>
+          <li><a href="#">Contact Us</a></li>
+        </ul>
+      </nav>
+    </footer>
+  </script>
+
+  <script src="js/libs/jquery-1.9.1.js"></script>
+  <script src="js/libs/handlebars-1.0.0-rc.4.js"></script>
+  <script src="js/libs/ember-1.0.0-rc.5.js"></script>
+  <script src="js/libs/ember-data.js"></script>
+  <script src="js/app.js"></script>
+  
+</body>
+</html>

@@ -1,0 +1,239 @@
+/* Put your CSS here */
+
+/* colors
+light-orange: #A99456;
+dark-blue: #2E3884
+cold-blue: #216477
+yellow: #FFCA40;
+*/
+/* new colors ------
+	black: #242526;
+	light-gray: #636361;
+	dark-gray: #3A3C42;
+	brown: #9A623D;
+	dark-brown: #52462E;
+	blue: #6998BF;
+	tan: #A99456;
+	light-tan: #CDCBC1;
+*/
+@import url(http://fonts.googleapis.com/css?family=Finger+Paint);
+@import url(http://fonts.googleapis.com/css?family=Armata);
+
+* {
+	box-sizing: border-box;
+}
+html, body {
+    margin: 0;
+    padding: 0;
+    background: #636361;
+    color: #CDCBC1;
+    font-weight: 400;
+    font-family: 'Armata', sans-serif;
+    line-height: 1.3;
+}
+h1, h2, h3, h4, h4 {
+	margin: 0;
+	padding: 0;
+	font-weight: 100;
+}
+h1 {
+	font-size: 2rem;
+	color: #fff;
+}
+h2 {
+	font-size: 1.625rem;
+}
+h3 {
+	font-size: 1.375rem;
+}
+h4 {
+	font-size: 1.125rem;
+}
+p {
+	font-size: 1rem;
+	margin: 0 0 1rem;
+}
+a {
+	text-decoration: none;
+	color: #A99456;
+}
+ul {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+body {
+	background: url('../img/bg2.jpg') no-repeat;
+	background-size: cover;
+	height: 100%;
+	min-height: 100vh;
+}
+.button {
+	background: #242526;
+	border: none;
+	border-radius: 0;
+	color: #fff;
+	padding: 1em 2em;
+	text-align: center;
+}
+
+/* INDEX PAGE */
+.logo {
+	width: 100%;
+	text-align: center;
+	padding-top: 3rem;
+	font-family: 'Finger Paint', cursive;
+}
+.slogan {
+	text-align: center;
+	font-size: .8rem;
+	margin-bottom: 3rem;
+}
+.login-form {
+	width: 70%;
+	margin: 0 auto;
+}
+.login-form label {
+	width: 100%;
+}
+.login-form input {
+	width: 100%;
+	margin-bottom: 1rem;
+}
+input[type="text"], input[type="password"] {
+	background: #CDCBC1;
+	border: .1em solid #999;
+	line-height: 2;
+	height: 2.2em;
+}
+.reg-link {
+	display: block;
+	width: 70%;
+	margin: 0 auto;
+	text-align: right;
+}
+
+/* INNER PAGE HEADER */
+.app-header {
+	width: 100%;
+	background: rgba(0,0,0,0.7);
+	height: 2.8125rem;
+	overflow: hidden;
+}
+.app-header .logo {
+	float: left;
+	font-size: 1.3rem;
+	width: 40%;
+	margin: 0;
+	padding: .5rem;
+}
+.app-header .slogan {
+	float: right;
+	font-size: .8rem;
+	line-height: 2.8125rem;
+	max-width: 50%;
+	color: #ccc;
+	white-space: nowrap;
+	padding-right: .3rem;
+}
+/* INNER PAGE FOOTER */
+.app-footer {
+	position: fixed;
+	z-index: 999;
+	background: #222;
+	color: #fff;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: 2.8125rem;
+	transition: all .5s;
+}
+.footer-open {
+	height: 10rem;
+}
+.app-footer h3 {
+	float: left;
+	width: 50%;
+}
+.app-footer nav {
+	display: none;
+}
+.app-footer .nav-btn {
+	float: right;
+	width: 20%;
+	text-align: right;
+	padding-right: 1rem;
+	line-height: 2.8125rem;
+	cursor: pointer;
+}
+
+/* INNER GAME PAGES */
+.game-board {
+	margin-bottom: 3.5rem;
+	padding: .8rem;
+}
+
+/* DASHBOARD */
+.welcome-name {
+	text-align: center;
+	margin-bottom: 1rem;
+}
+.welcome-name span {
+	font-size: .7em;
+	color: #A99456;
+}
+.target span {
+	color: #ff0011;
+	font-size: 1.2em;
+}
+.clue-list {
+	padding: 0;
+	margin: 1em 0;
+}
+.clue-list li {
+	list-style: none;
+}
+
+.app-nav {
+	width: 100%;
+	overflow: hidden;
+}
+.app-nav ul {
+	margin: 0;
+	padding: 0;
+}
+.app-nav li {
+	list-style: none;
+	width: 50%;
+	padding: 1rem;
+	background: #333;
+	float: left;
+}
+.app-nav li a {
+	color: #fff;
+	display: block;
+	width: 100%;
+	line-height: 1.8rem;
+	text-align: center;
+}
+.footer-rank {
+	line-height: 2.8125rem;
+	font-size: 1rem;
+	padding-left: 1rem;
+}
+
+
+/* USERS PAGE */
+.players {
+	border-left: .5em solid #A99456;
+}
+.players li {
+	padding-left: .5em;
+}
+.players li:nth-child(even) {
+	background: #f1f1f1;
+}
+.players h3 > span, .players p > span {
+	color: #777;
+	font-size: .8em;
+}
