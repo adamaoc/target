@@ -15,7 +15,7 @@
   </script>
   
 <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
-<title>Ember Starter Kit</title>
+<title>Target - Game</title>
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/style.css">
 </head>
@@ -30,14 +30,22 @@
   </script>
 
   <script type="text/x-handlebars" data-template-name="index">
-    <form action="dashboard.html#/dashboard" method="post" class="login-form">
+    <form {{action logIn on="submit"}} method="post" class="login-form">
       <label for="username">User Name</label>
       <input type="text" name="username" id="username">
       <label for="password">Password</label>
       <input type="password" name="password" id="password">
-      <input type="submit" value="get in the game!" class="button login">
+      <input type="submit" class="button" value="Get In the Game!" />
     </form>
     <a href="#" class="reg-link">register to join game</a>
+  </script>
+
+  <script type="text/x-handlebars" data-template-name="dashboard">
+    <h2>Dash</h2>
+    {{#each model}}
+    <h3>{{firstname}}</h3>
+    <p><span>Rank</span> {{rank}} </p>
+    {{/each}}
   </script>
 
   <script src="js/libs/jquery-1.9.1.js"></script>
